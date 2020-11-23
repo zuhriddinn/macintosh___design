@@ -7,7 +7,7 @@
     --ff400_MR: 'MyriadPro Regular';
     --ff400_NR: 'NunitoSans Regular';
     --ff700_NB: 'NunitoSans Bold';
-    --ff400_WR: 'WorkSans Regular';
+    --ff400_WR: 'phonesSans Regular';
     --ff400_RM: 'Roboto Medium';
     --white: #ffffff;
     --green: #007d2f;
@@ -15,7 +15,7 @@
     --green_shadow: #378956;
     --black_heading: #1d1d1d;
     --black_text: #191919;
-    --black_contact-info_pro-skills: #171717;
+    --black_contact-info_pro-professional: #171717;
     --black_footer: #141414;
     --black_shadow: #201600;
     --black: #000000;
@@ -23,7 +23,7 @@
     --lightgray_text: #787878;
     --gray_bg: #f5f5f5;
     --gray_bg-breakfast: #f6f6f6;
-    --gray_bg-pro-skills: #f8f9f9;
+    --gray_bg-pro-professional: #f8f9f9;
     --gray_footer-text: #bcbcbc;
 }
 
@@ -51,15 +51,7 @@ p {
     margin: 0;
 }
 
-.green-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: var(--green);
-    color: var(--white);
-    font-size: 12px;
-    line-height: 9px;
-}
+
 
 .green-btn:hover {
     color: var(--black);
@@ -79,9 +71,10 @@ p {
 /* ********************** */
 /* HEADER start */
 
-.header__index {
+.header {
     background: url(../images/index_images/Header_bg.jpg) no-repeat center center /cover;
     background-attachment: fixed;
+    min-height: 100vh;
 }
 
 .header__nav {
@@ -104,13 +97,13 @@ p {
     padding-right: 0;
 }
 
-.header__welcome-title {
+.header__section-title {
     margin-top: 59px;
     font-size: 35.84px;
     color: var(--black_heading);
 }
 
-.header__welcome-text {
+.header__section-text {
     margin-top: 30px;
     font-family: var(--ff100);
     font-size: 15.36px;
@@ -118,66 +111,75 @@ p {
     line-height: 23.9px;
 }
 
-.header__welcome-btn {
+.header-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--green);
+    color: var(--white);
+    font-size: 12px;
+    line-height: 9px;
     margin-top: 53px;
     width: 190px;
     height: 54px;
     margin-bottom: 20px;
 }
 
+
 .gray-bg {
-    background: var(--gray_bg-pro-skills);
+    background: var(--gray_bg-pro-professional);
 }
 
 /* HEADER end */
 /* ************************ */
 /* MAIN start */
 
-.main__article-title {
+.main__items-title {
     margin-top: 96px;
     line-height: 26px;
     color: var(--black_text);
     font-size: 34.43 px;
 }
 
-.main__article-text {
+.main__items-text {
     margin-top: 45px;
     font-size: 13.82px;
     font-family: var(--ff400_NR);
     line-height: 20.73px;
 }
 
-.main_article-signature {
+.main__items-podpis {
     margin-top: 51px;
 }
 
-.main__article {
+.main__items {
     padding-bottom: 40px;
 }
 
-.main__skills-box {
+.main__professional{
     margin-left: 50px;
+    text-transform: uppercase;
 }
 
-.mian__skills-title {
+.mian__professional-title {
     margin-top: 164px;
     font-size: 30px;
     line-height: 23px;
-    color: var(--black_contact-info_pro-skills);
+    color: var(--black_contact-info_pro-professional);
     margin-bottom: 39px;
 }
 
-.main-skills-name {
+.main-professional-name {
     font-size: 12px;
     color: var(--black);
     line-height: 9px;
 }
 
-.main__skills-percent {
+.main__professional-percent {
     padding-left: 17px;
 }
 
-.main__skills-item::after {
+.main__professional-item::after {
     margin-top: 20px;
     content: '';
     display: block;
@@ -187,65 +189,65 @@ p {
     margin-bottom: 41px;
 }
 
-.main__skills-item-1::after {
+.main__professional-item-1::after {
     background: linear-gradient(90deg, #007d2f 75%, #d8d8d8 25%);
 }
 
-.main__skills-item-2::after {
+.main__professional-item-2::after {
     background: linear-gradient(90deg, #007d2f 90%, #d8d8d8 10%);
 }
 
-.main__skills-item-3::after {
+.main__professional-item-3::after {
     background: linear-gradient(90deg, #007d2f 65%, #d8d8d8 35%);
     margin-bottom: 164px;
 }
 
-.skills__img,
+.professional__img,
 .about-me__img,
 .main__project-img {
     left: 0;
     object-fit: cover;
 }
 
-.main__statistic {
+.main__rating {
     background: var(--green);
     padding-bottom: 80px;
 }
 
-.main__statistic-rate {
+.main__rating-ratings {
     margin-top: 76px;
     color: var(--white);
 }
 
-.main__rate-icon {
+.main__ratings-icon {
     font-size: 30px;
 }
 
-.main__rate-number {
+.main__ratings-number {
     margin-top: 7px;
     line-height: 13px;
     font-size: 18px;
 }
 
-.main__rate-desc {
+.main__ratings-desc {
     margin-top: 15px;
     font-size: 12px;
     line-height: 9px;
 }
 
-.main__statistic-rate:hover {
+.main__rating-ratings:hover {
     color: var(--black);
 }
 
-.main__work-shadow:hover {
+.main__phones-shadow:hover {
     opacity: 0.42;
 }
 
-.main__work-img {
+.main__phones-img {
     object-fit: cover;
 }
 
-.main__work-eye-icon {
+.main__phones-eye-icon {
     position: absolute;
     font-size: 40px;
     opacity: 1;
@@ -253,17 +255,17 @@ p {
     color: white;
 }
 
-.main__work-eye-icon:hover {
+.main__phones-eye-icon:hover {
     opacity: 0;
 }
 
-.main__work-more {
+.main__phones-more {
     padding-top: 43px;
     background: var(--green);
     padding-bottom: 40px;
 }
 
-.main__work-more-link {
+.main__phones-more-link {
     display: block;
     font-size: 21.13px;
     text-transform: uppercase;
@@ -271,7 +273,7 @@ p {
     transition: 0.5s;
 }
 
-.main__work-more-link:hover {
+.main__phones-more-link:hover {
     color: var(--black);
 }
 
@@ -461,7 +463,7 @@ p {
 
 .main__graphic-title {
     margin-top: 110px;
-    color: var(--black_contact-info_pro-skills);
+    color: var(--black_contact-info_pro-professional);
     font-size: 30.02px;
     line-height: 28px;
 }
@@ -481,19 +483,19 @@ p {
 
 /* ABOUT */
 
-.main__graphic-worker {
+.main__graphic-phoneser {
     background: var(--dark_bg-amelia-woods);
     padding-bottom: 111px;
     color: var(--white);
 }
 
-.main__graphic-worker-title {
+.main__graphic-phoneser-title {
     margin-top: 112px;
     line-height: 47px;
     font-size: 61.69px;
 }
 
-.main__graphic-worker-text {
+.main__graphic-phoneser-text {
     margin-top: 24px;
     font-size: 19px;
     font-family: var(--ff400_NR);
@@ -507,7 +509,7 @@ p {
 .main__about-me-title {
     margin-top: 139px;
     font-size: 30px;
-    color: var(--black_contact-info_pro-skills);
+    color: var(--black_contact-info_pro-professional);
     line-height: 22px;
     margin-bottom: 40px;
 }
@@ -550,7 +552,7 @@ p {
     margin-top: 106px;
     line-height: 37px;
     font-size: 38px;
-    color: var(--black_contact-info_pro-skills);
+    color: var(--black_contact-info_pro-professional);
     font-family: var(--ff500);
 }
 
@@ -573,7 +575,7 @@ p {
 
 .main__project-contact-span {
     font-family: var(--ff700_NB);
-    color: var(--black_contact-info_pro-skills);
+    color: var(--black_contact-info_pro-professional);
 }
 
 .main__project-slider {
@@ -615,7 +617,7 @@ p {
 }
 
 .main__contact-title {
-    color: var(--black_contact-info_pro-skills);
+    color: var(--black_contact-info_pro-professional);
     line-height: 22px;
     font-size: 30px;
     font-family: var(--ff500);
@@ -632,7 +634,7 @@ p {
 
 .main__contact-detail-span {
     font-family: var(--ff700_NB);
-    color: var(--black_contact-info_pro-skills);
+    color: var(--black_contact-info_pro-professional);
 }
 
 .main__contact-name,
@@ -706,30 +708,30 @@ p {
 /* MEDIA start */
 
 @media (max-width: 1199px) {
-    .main__progress-skills {
+    .main__progress-professional {
         align-items: center;
     }
 
-    .main__statistic-rate {
+    .main__rating-ratings {
         margin-right: 0;
     }
 
-    .mian__skills-title {
+    .mian__professional-title {
         margin-top: 100px;
     }
 
-    .main__skills-item::after {
+    .main__professional-item::after {
         width: 430px;
         height: 3px;
     }
 
-    .main__skills-item-3::after {
+    .main__professional-item-3::after {
         margin-bottom: 100px;
     }
 }
 
 @media (max-width: 992px) {
-    .main__skills-box {
+    .main__professional-box {
         margin-left: 0;
     }
 
@@ -747,7 +749,7 @@ p {
         justify-content: space-between;
     }
 
-    .skills__images,
+    .professional__images,
     .about-me-image,
     .main__project-images {
         height: 100vh;
@@ -857,7 +859,7 @@ p {
         padding: 0;
     }
 
-    .skills__images,
+    .professional__images,
     .main__project-images {
         height: 75vh;
     }
@@ -883,16 +885,16 @@ p {
         margin-left: auto;
     }
 
-    .mian__skills-title {
+    .mian__professional-title {
         text-align: center;
     }
 
-    .main__skills-item {
+    .main__professional-item {
         margin-left: auto;
         margin-right: auto;
     }
 
-    .main__skills-item::after {
+    .main__professional-item::after {
         width: 200px;
         height: 3px;
     }
@@ -912,7 +914,7 @@ p {
         font-size: 15.28px;
     }
 
-    .skills__images {
+    .professional__images {
         height: 50vh;
     }
 
