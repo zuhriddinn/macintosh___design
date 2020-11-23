@@ -456,19 +456,19 @@ p {
 
 /* HOME */
 
-.main__graphic {
+.main__section {
     background: var(--green);
     padding-bottom: 97px;
 }
 
-.main__graphic-title {
+.main__section-title {
     margin-top: 110px;
     color: var(--black_contact-info_pro-professional);
     font-size: 30.02px;
     line-height: 28px;
 }
 
-.main__graphic-text {
+.main__section-text {
     margin-top: 32px;
     font-family: var(--ff400_RM);
     font-size: 17.29px;
@@ -476,26 +476,26 @@ p {
     line-height: 26.9px;
 }
 
-.main__graphic-shadow:hover {
+.main__section-shadow:hover {
     background: var(--green_shadow);
     opacity: 0.85;
 }
 
 /* ABOUT */
 
-.main__graphic-phoneser {
+.main__section-phoneser {
     background: var(--dark_bg-amelia-woods);
     padding-bottom: 111px;
     color: var(--white);
 }
 
-.main__graphic-phoneser-title {
+.main__section-phoneser-title {
     margin-top: 112px;
     line-height: 47px;
     font-size: 61.69px;
 }
 
-.main__graphic-phoneser-text {
+.main__section-phoneser-text {
     margin-top: 24px;
     font-size: 19px;
     font-family: var(--ff400_NR);
@@ -698,7 +698,7 @@ p {
     margin-top: 99px;
 }
 
-.footer__link {
+.footer__linkss {
     font-family: var(--ff400_NR);
     font-size: 15px;
 }
